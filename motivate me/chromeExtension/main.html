@@ -1,0 +1,158 @@
+<html>
+<head>
+	<title></title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="materialize.min.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="maincss.css" />
+<script src="jquery.js"></script>
+<script src="content.js"></script>  
+<script src="materialize.min.js"></script>
+<script src="aes.js"></script>
+
+</head>
+<body id="myBody">
+<div id="background-wallpaper">
+
+
+<!-- <a class="btn btn-floating pulse floating-margin" href="#modal1"><i class="large material-icons">favorite</i></a> -->
+
+<!-- Modal Structure -->
+
+ <div id="about-us-modal" class="modal">
+    <div class="modal-content">
+      <h4>About Us</h4>
+      <h6>Hi, so glad that you stopped by. I'm <b>Navneet Singh</b> and I like creating real world application that help and impact a large number of people. A lot of effort, time and resources have been put to bring this together. Do <b>support us</b> by giving a positive comment as well as positive ratings on the chrome store. <b>Share the app</b> so that it reaches to everyone out there. <br/> Incase you want to reach out to me, you can contact me at <b>npsc009@gmail.com</b>.</h6>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Thank You</a>
+    </div>
+  </div>
+
+<div id="permission-useage-modal" class="modal">
+    <div class="modal-content">
+      <h4>Permission And Useage</h4>
+      <h6>bing.com<br/>motivateme.hol.es<br/></h6>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Thank You</a>
+    </div>
+  </div>
+
+<!-- email submission modal -->
+<div id="modal2" class="modal modal-fixed-footer-custom">
+  <div class="modal-content">    
+    <div><p class="center-align" style="font-size:15px;">Kindly provide a valid email address, we promise we won't spam you, but a valid email address will provide you more power for this extension.</p></div>
+    <div class="divider"></div>
+
+  <ul class="" >
+    <div class="error-msg" style="display:none;"></div>
+    <div class="success-msg" style="display:none;"></div>
+    <li>
+      <div class="row">
+        <div class="col s12">
+          Enter your email:
+          <div class="input-field inline email-width">
+            <input id="email" type="email" class="validate">
+            <!-- data-error="wrong" data-success="right" -->
+            <label for="email" >Email</label>
+          </div>
+        </div>
+        <a class="waves-effect waves-light btn right" id="submit-email-btn" style="margin-right: 117px;">Submit Email</a>
+      </div>
+
+    </li>
+    
+  </ul>
+        
+
+   </div>
+   <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+   </div>
+</div>
+<!-- end email submisison modal -->
+
+<!-- side menu start here -->
+<ul id="slide-out" class="side-nav">
+    <li><div class="userView user-container">
+      <div class="background main-user-background" >
+        <!-- <img src="images/office.jpg"> -->
+      </div>     
+      <div><div class="circle circle-background">
+        <div class="circle-alphabet">N</div>
+      </div></div>
+      <div><span class="white-text name">Hi,</span></div>
+      <div class="inline-div"><span class="white-text email user-email"></span></div>   
+       <a class="btn btn-floating pulse floating-margin edit-btn"  href="#modal2" style="display: inline-flex;margin-top: -9px;"><i class="material-icons edit-text-btn">mode_edit</i></a>   
+    </div></li>
+    <li class="list-class">    
+        <div class="avg-text">Selected Topics</div>  
+        <div class="message-box"></div>         
+        <div class="tags">          
+        </div>        
+    </li>
+    <li class="list-class">
+        <div class="avg-text">Unselected Topics</div>       
+        <div class="un-tags">          
+        </div>        
+    </li>
+      
+    <li>
+      <div class="collection">
+        <a href="#about-us-modal" class="collection-item avg-text font-color-text">About Us</a>
+        <a href="#permission-useage-modal" class="collection-item avg-text font-color-text">Permission And Useage</a>
+      </div>
+    </li>
+
+    <div><p class="center-align favorite-text" style="">Made with <i class="material-icons" style="color:red">favorite</i> from India</p></div>
+  </ul>
+  <a href="#" data-activates="slide-out" class="btn btn-floating pulse floating-margin button-collapse red"><i class="material-icons">menu</i></a>
+<!-- side menu end here -->
+
+
+<div id="mainContent">
+  <div class="time"></div>
+  <div class="date"></div>
+	<div class="preloader-wrapper big active valign-wrapper center-align display-loader">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>  
+
+	<span id="content"></span>
+
+  <br/>
+  <br/>
+  <a class="waves-effect waves-light btn" id="recommendationButton">Show Recommendations</a>
+  <div class="recommendation-text">We have a few recommendations for you, click on books below to know more</div>
+  </div>
+<div class="carousel">    
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/B01EWRP3BW/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01EWRP3BW&linkCode=as2&tag=navneet055-21&linkId=f74f114c33a9e1d3f8296e1992622b4d"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B01EWRP3BW&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/9386224585/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=9386224585&linkCode=as2&tag=navneet055-21&linkId=da93cdc5fb4f45f797d3684b39330836"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=9386224585&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/0143426575/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=0143426575&linkCode=as2&tag=navneet055-21&linkId=c723e765b1e73ceecc6d044b228da2e7"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=0143426575&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/8192910962/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=8192910962&linkCode=as2&tag=navneet055-21&linkId=4f218726c996df542d356d8e90d20296"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=8192910962&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/8192910911/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=8192910911&linkCode=as2&tag=navneet055-21&linkId=2d3bee821e09b15a5575138afad1a597"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=8192910911&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/1612680011/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1612680011&linkCode=as2&tag=navneet055-21&linkId=c4bc7bd9b68bea326cf7118006c2fdd8"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=1612680011&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/9384761540/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=9384761540&linkCode=as2&tag=navneet055-21&linkId=ba69182e18e87f566304025a94539c5b"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=9384761540&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/9352534026/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=9352534026&linkCode=as2&tag=navneet055-21&linkId=e994ab8e70bbd8234ba8e6a828c5c1bd"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=9352534026&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+
+<a class="carousel-item" target="_blank"  href="https://www.amazon.in/gp/product/B01LYV5C57/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01LYV5C57&linkCode=as2&tag=navneet055-21&linkId=2c3acc9d8f18027897db4d9c55af3e05"><img border="0" src="https://ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B01LYV5C57&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=navneet055-21" ></a>
+</div>
+
+</div>
+</body>
+</html>
+

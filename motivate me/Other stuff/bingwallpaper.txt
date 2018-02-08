@@ -1,0 +1,22 @@
+http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=de-DE
+
+https://msdn.microsoft.com/en-us/library/dn783426.aspx
+
+
+//  chrome.history.search({text: 'www.google.com', maxResults: 10}, function(data) {
+		//     data.forEach(function(page) {
+		//         alert(page.url);
+		//     });
+		// });	
+
+
+http://www.adonads.com/
+https://www.quora.com/Is-it-possible-to-monetize-a-Chrome-Extension
+http://addonsmash.com/index.html
+
+
+https://www.iconfinder.com/icons/939826/alphabet_letter_p_path_sign_icon#size=256
+
+https://www.brainyquote.com/quotes/keywords/category.html
+http://www.quoteland.com/topic/Motivational-Quotes/232/
+http://www.successories.com/iquote/category/44/love-quotes/2

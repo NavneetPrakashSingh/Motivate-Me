@@ -1,0 +1,21 @@
+http://api.forismatic.com/api/1.0/?method=getQuote&key=random&format=json&lang=en
+"http://api.forismatic.com/",
+
+http://motivateme.hol.es/api/public/api/1&2
+
+
+// 	chrome.identity.getProfileUserInfo(function(userInfo) {
+ 	// 	// retrieving customer id of the user
+		//    customerEmail = userInfo.email;
+		//    customerId = userInfo.id;
+		//    var chromeId = null;
+		// 	chrome.storage.local.get('motivateme-id', function(item){
+		// 	  var storedChromeId = item['motivateme-id'];
+		// 	  if(!storedChromeId) {
+		// 	    storedChromeId = Math.random().toString(36).slice(2);
+		// 	    chrome.storage.local.set({'motivateme-id':storedChromeId});
+		// 	  }
+		// 	  chromeId = storedChromeId;
+		// 	});
+		//    alert(customerEmail+"----"+customerId+"-----"+chromeId);
+		// });

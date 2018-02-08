@@ -1,0 +1,22 @@
+Offline mode dev
+
+provide random value from 1 to 21
+create an array of images 
+display quotes 
+take random value and put it into array
+hide the modal div as well
+
+500px.org
+vo.msecnd.net
+gstatic.com	
+
+//TODO
+https://www.brainyquote.com/quotes/topics/topic_motivational.html
+-shift all quotes to your own server
+-create a side menu where users can select their quotes preference: like decide the category - provide personalization to the user
+-add a donate option
+
+//TODO
+https://www.brainyquote.com/quotes/keywords/category.html
+look for ajax request inf having request url as https://www.brainyquote.com/api/inf
+either hit a post request on the url or copy the data related and parse it to get the quote and author. Take help from content.js match url to get a better view

@@ -1,0 +1,6 @@
+TODO:
+1. create a crone that hits the server every hour to check if server is down or not
+2. work on user signin by creating an option for the user to edit the profile
+3. work on add quote feature
+4. work on like feature
+5. work on similar quotes by a particular person
